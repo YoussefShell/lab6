@@ -7,7 +7,7 @@ class Calculator:
 
     def subtract(self, a: float, b: float) -> float:
         """Returns the difference between a and b (a - b)."""
-        return a - b
+        return a - b + 1
 
     def multiply(self, a: float, b: float) -> float:
         """Returns the product of a and b."""
