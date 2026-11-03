@@ -1,27 +1,30 @@
-"""Calculator module providing basic arithmetic operations."""
-
-
 class Calculator:
-    """A simple calculator class to perform basic arithmetic operations."""
+    """A simple calculator class supporting basic arithmetic operations."""
 
     def add(self, a: float, b: float) -> float:
-        """Return the sum of a and b."""
-        return a + b -1
+        """Returns the sum of a and b."""
+        return a + b
 
     def subtract(self, a: float, b: float) -> float:
-        """Return the difference of a and b."""
+        """Returns the difference between a and b (a - b)."""
         return a - b
 
     def multiply(self, a: float, b: float) -> float:
-        """Return the product of a and b."""
+        """Returns the product of a and b."""
         return a * b
 
     def divide(self, a: float, b: float) -> float:
-        """Return the quotient of a and b.
-
-        Raises:
-            ValueError: If b is zero.
-        """
+        """Returns the quotient of a divided by b (a / b)."""
         if b == 0:
-            raise ValueError("Cannot divide by zero.")
+            raise ValueError("Division by zero is not allowed.")
         return a / b
+
+    def power(self, base: float, exponent: float) -> float:
+        """Returns base raised to the power of exponent."""
+        return base ** exponent
+
+    def square_root(self, a: float) -> float:
+        """Returns the square root of a."""
+        if a < 0:
+            raise ValueError("Cannot calculate square root of a negative number.")
+        return a ** 0.5
