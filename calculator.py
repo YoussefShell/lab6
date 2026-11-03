@@ -6,7 +6,7 @@ class Calculator:
 
     def add(self, a: float, b: float) -> float:
         """Return the sum of a and b."""
-        return a + b
+        return a + b -1
 
     def subtract(self, a: float, b: float) -> float:
         """Return the difference of a and b."""
